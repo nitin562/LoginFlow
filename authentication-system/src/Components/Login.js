@@ -28,7 +28,7 @@ export default function Login() {
         }
         const result=await fetch(url,options)
         const jResult=await result.json()
-        console.log( jResult)
+        
         if(jResult.Success===0){
             let Message=""
             if("email" in jResult.error){
